@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Academia верстальщика ➤</title>
+    <link rel="shortcut icon" href="pandochka.png" type="image/X-icon" width="12px" height="9px">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="Academy.my/manifest.json">
+    
+  </head>
+
+      <script>
+        $(".nav-toggle").on("click", function(){
+          $("#menu").toggleClass("active");
+        });
+      </script>
+
+    <style>
+
+   {
+     padding: 0;
+      margin: 0;
+       border: 0;
+}     
+      body {
+          background: url(img/background.png);
+           -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+
+           -o-background-size: 100%;
+          background-size: 100%;
+    }
+</style>
+
+                        <!-- MENU 1 -->  
+  <body>
+    <nav>
+  <ul class="topmenu">
+    <li><a href="" class="active">Главная<span class="fa fa-angle-down"></span></a>
+      <ul class="submenu">
+        <li><a href="">Главное меню</a></li>
+        <li><a href="">Второстепенное меню<span class="fa fa-angle-down"></span></a>
+          <ul class="submenu">
+            <li><a href="">меню третьего уровня</a></li>
+            <li><a href="">меню третьего уровня</a></li>
+            <li><a href="">меню третьего уровня</a></li>
+          </ul>
+        </li>
+       <li><a href="">Меню третьего уровня</a></li>
+      </ul>
+     </li>
+  <li><a href="">Компания<span class="fa fa-angle-down"></span></a>
+    <ul class="submenu">
+      <li><a href="https://blogtolika.000webhostapp.com/" target="_blank">BLOG3</a></li>
+      <li><a href="">BLOG4</a></li>
+      <li><a href="">BLOG6</a></li>
+    </ul>
+  </li>
+  <li><a href="">Связаться со мной<span class="fa fa-angle-down"></span></a>
+    <ul class="submenu">
+      <li><a href="tel: +38-066-225-38-37">Позвонить</a></li>
+        <li><a href="tg://resolve?domain=ZAKKERN" target="_blank">Telegram</a></li>
+          <li><a href="https://accounts.google.com/SignOutOptions?hl=ru&continue=https://www.google.com%3Fhl%3Dru" target="_blank">Gmail</a></li>
+    </ul>
+  </li>
+</nav>
+
+</style>
+</style>
+
+</head>
+<body>
+                     <!-- MENU 2 -->
+
+    <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="https://youtube.com/channel/uc28uyak_i-8f_1g3ffd2bqq" target="_blank">Chanel</a>
+           <a href="https://blogtolika.000webhostapp.com/" target="_blank">Project</a>
+           <a href="#">Blog</a>
+         <a href="tel: +38-066-225-38-37" target="_blank">Contact</a>
+       <li><a href="tg://resolve?domain=ZAKKERN" target="_blank">Telegram</a></li>
+       <li><a href="https://www.instagram.com/pandochka_and_master/" target="_blank">Instagram</a></li>
+    </div>
+        <h2><div class="menu">Open to Menu</div></h2>
+              <!-- <p class="menu3">Click on the element below to open the side navigation menu.</p> -->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="menu4">☰ open</div></span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</style>
+</head>
+<body oncopy="return false;" class="m-mode">
+
+<h3><div class="dostig">Расказ о своих достижениях</div></h3>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'My Blog (ENG)')"><div class="open3">My Blog (ENG)</div></button>
+  <hr />
+         <button class="tablinks" onclick="openCity(event, 'Мой Блог (RU)')"><div class="open4">Мой Блог (RU)</div></button>
+  <hr />
+      <button class="tablinks" onclick="openCity(event, 'My Blog (ENG, RU)')"><div class="open6">My Blog (ENG, RU)</div></button>
+    </div>
+   <div id="My Blog (ENG)" class="tabcontent">
+        <h3>My Blog</h3>
+        <p class="eng">This is my blog. It's my first site. I listening it's site try week. (2022.03.01)<p>
+   </div>
+
+      <div id="Мой Блог (RU)" class="tabcontent">
+          <h3>Мой Блог</h3>
+          <p class="ru">Это мой блог. Это мой первый сайт. Я писал этот сайт три месяца. (2022.03.01)</p> 
+      </div>
+
+<div id="My Blog (ENG, RU)" class="tabcontent">
+  <h3>My Blog</h3>
+  <p class="eng-ru">Я его написал в <a href="https://htmlacademy.ru/courses" target="_blank">"HTML Academy"</a>. Там интересно, так что могу смело рекомендовать. (2022.03.01)</p>
+</div>
+
+    </style>
+   </head>
+  <body>
+ </div>
+    <script>
+      function openCity(evt, cityName) {
+       var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+            tablinks = document.getElementsByClassName("tablinks");
+         for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+      document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+      
+</style>
+</head>
+<body>
+                  
+      <!-- MENU 2     BODY -->
+<body oncopy="return false;" class="m-mode">
+<div id="mySidenav" class="sidenav3">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+         <a href="https://youtube.com/channel/uc28uyak_i-8f_1g3ffd2bqq" target="_blank">Channel</a>
+           <a href="https://blogtolika.000webhostapp.com/" target="_blank">Project</a>
+           <a href="https://blogtolika.000webhostapp.com/" target="_blank">Blog</a>
+         <a href="tel: +38-066-225-38-37" target="_blank">Contact</a>
+       <li><a href="tg://resolve?domain=ZAKKERN" target="_blank">Telegram</a></li>
+       <li><a href="https://www.instagram.com/pandochka_and_master/" target="_blank">Instagram</a></li>
+    </div>
+        <h2><div class="menu-list">Open to Menu</div></h2>
+              <!-- <p class="menu3">Click on the element below to open the side navigation menu.</p> -->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="menu-list1">☰ open</div></span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</style>
+</head>
+    </style>
+   </head>
+  <body>
+ </div>
+    <script>
+      function openCity(evt, cityName) {
+       var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+            tablinks = document.getElementsByClassName("tablinks");
+         for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+      document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>         
+    </style>
+
+                     <!-- БЛОК НАВИГАТОР -->
+   <header>
+      <h1 class="page-title">Сайт начинающего верстальщика</h1> 
+        <div id="search-form" class="search">
+          <form class="submit" action="/search" method="GET">
+            <input type="text" name="q" placeholder="Что ищем? ... Вкладки, chrom, psd" autocomplete="off" required minlength="3" maxlength="30" value="">
+         <button type="submit">&nbsp;</button>
+              <small>ENTER</small>
+      </form>
+    </div>
+  <br />
+                  <!-- СВЯЗЬ СО МНОЙ -->
+     <div class="main">
+    <a href="tel: +38-066-225-38-37"><span class="telephone">Мой телефон</span></a>
+  <br />
+     <special class="special">
+       <div class="special-top-tip">
+        Получайте
+         <a href="tg://resolve?domain=ZAKKERN">уведомления</a>
+           в моем телеграм канале!(-_-)
+         <a href=""></a>
+            </div>
+                <!-- НЕ ПОНЯТНАЯ ФИГНЯ -->
+<details class="extension">
+  <summary><label for="fn">Name & Extension:
+</label></summary>
+  <p><input type="text" id="fn" name="fn" value="Howdy.png">
+  <p><label><input type="checkbox" name="ext" checked> Hide extension</label>
+</details>
+    </header>
+              <!-- ФОТОГРАФИЯ ПОД ЗАГОЛОВКОМ -->
+    <main>
+      <div class="avatar-container">
+        <img class="avatar" src="img/Pandochka.png" width="93" height="87" alt="Аватарка">
+      </div>
+                  <!-- ЗАПИСИ В БЛОГЕ -->
+      <nav class="blog-navigation">
+        <h2><nav class="blog"><a href="#bottom">Записи в блоге</a></nav></h2>
+        <ul>
+          <p id="bottom">
+            <li><a href="index.blog/index1.html" target="_blank"><nav class="day1">День первый. Как я учусь верстке</nav></a></li>
+          <li><a href="index.blog/index3.html" target="_blank"><nav class="day2">День второй. Хочу быть верстальщиком</nav></a></li>
+          <li><a href="index.blog/index4.html" target="_blank"><nav class="day3">День третий. Моя учеба продолжается</nav></a></li>
+          <li><a href="index.blog/index6.html" target="_blank"><nav class="day4">День четвертый. Как я пошел играть с Пандой</nav></a></li>
+          <li><a href="index.blog/index7.html" target="_blank"><nav class="day5">День пятый. Ненадолго прилег в кровать</nav></a></li>
+          <li><a href="index.blog/index9.html" target="_blank"><nav class="day6">День шестой. Как я немного научился верстать</nav></a></li>
+          <li><a href="index.blog/index10.html" target="_blank"><nav class="day7">День седьмой. Панда выдала мне задание</nav></a></li>
+          <li><a href="index.blog/index11.html" target="_blank"><nav class="day8">День восьмой. Очень серьёзный</nav></a></li>
+          <li><a href="index.blog/index12.html" target="_blank"><nav class="day9">День девятый. Точнее ночь</nav></a></li>
+          <li><a href="index.blog/index13.html" target="_blank"><nav class="day10">День десятый. Подведение итогов</nav></a></li>
+          <li><a href="index.blog/index14.html" target="_blank"><nav class="day11">День одиннадцатый. Учусь без фанатизма</nav></a></li>
+          <li><a href="index.blog/index16.html" target="_blank"><nav class="day12">День двенадцатый. Я с семьей едем а место, в котороея мечтаю полететь</nav></a></li>
+          <li><a href="index.blog/index17.html" target="_blank"><nav class="day13">День тринадцатый. Нашёл статью в которой пишется про Web-Программирование</nav></a></li>
+          <li><a href="index.blog/index15.html" target="_blank"><nav class="day14">День четырнадцатый. Новый формат моего сайта</nav></a></li>
+          <li><a href="index.blog/index18.html" target="_blank"><nav class="day15">День пятнадцатый. Галерея селфи</nav></a></li>
+
+          <li><a href="index.blog/index20.html" target="_blank"><nav class="day16">Я стал Front-End разработчиком</nav></a></li>
+          <li><a href="index.blog/index23.html" target="_blank"><nav class="day17">Фотографии моего куратора - Панда</nav></a></li>
+        </p>
+        </ul>
+      </nav>
+  <style>
+      .error {color: #FF0000;}
+</style>
+</head>
+<body>  
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MYLOGO.COM</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p class="port">Resize the browser window to see the responsive effect.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="img/mountains.png" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="img/light.png" alt="Lights" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="img/love.png" alt="Nature" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="img/mountains.png" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<div class="content">
+  <img src="img/pandochka.png" alt="Bear" style="width:100%">
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+      <section>
+        <p class="text-html">Всем привет! Добро пожаловать на мой первый сайт. Ещё недавно я понятия не имел, кто такой верстальщик, а теперь я нашёл <a href="https://htmlacademy.ru/courses" target="_blank">тренажёры по HTML и CSS</a> и поставил перед собой цель — стать им. У меня даже появился инструктор — Панда, которая не позволит мне расслабиться и будет следить за моими успехами.</p>
+        <p class="text-html3">Моё первое задание — Сделать свой личный сайт с помощью которого, я буду расказывать о себе.</p>
+      </section>
+      <div class="widget">
+  <h3 class="widget-title">Категории</h3>
+  <ul class="widget-list">
+    <li><a href="">Фотографии</a></li>
+    <li><a href="">Фотошоп</a></li>
+    <li><a href="">Видео</a></li>
+    <li><a href="">Монтаж</a></li>
+    <li><a href="">Видео</a></li>
+  </ul>
+</div>
+  <br />
+     <div class="col">
+       <h3 class="widget-title">Распродажа</h3>
+        <div class="price-line">
+         <div class="product-image">
+          <a href="Product3/background.png" target="_blank"><img src="img/background.png"></a>
+     </div>
+          <div class="product-content">
+            <div class="product-title"><a href="">Продукт 1</a></div>
+              <div class="star-rating">&nbsp;</div>
+               <div class="price-box"><span>$ 3000</span></div>
+          </div>
+      </div>
+            <div class="price-line">
+               <div class="product-image">
+                <a href="Product4/favicon.png" target="_blank"><img src="img/favicon.png"></a>
+            </div>
+               <div class="product-content">
+                  <div class="product-title"><a href="">Продукт 2</a></div>
+                    <div class="star-rating">&nbsp;</div>
+                      <div class="price-box"><span>$ 763</span></div>
+                </div>
+            </div>
+  <div class="price-line">
+    <div class="product-image">
+      <a href="Product6/telegram.svg" target="_blank"><img src="img/telegram.svg"></a>
+    </div>
+         <div class="product-content">
+           <div class="product-title"><a href="">Продукт 3</a></div>
+             <div class="star-rating">&nbsp;</div>
+               <div class="price-box"><span>$ 643</span></div>
+          </div>
+      </div>
+  </div>
+  <br />
+      <!-- Двойной блок - Блок тени -->
+    <p class="example-shadow-3"><span>Text</span></p>
+      <section>
+        <h2>,<p class="world">Навыки</p></h2>
+        <dl class="skills">
+          <dt><p class="world1">HTML</p></dt>
+          <dd><div class="skills-level skills-level-ok" style="width: 60%;">60%</div></dd>
+          <dt><p class="world3">CSS</p></dt>
+          <dd><div class="skills-level" style="width: 20%;">20%</div></dd>
+          <dt><p class="world4">JS</p></dt>
+          <dd><div class="skills-level4" style="width: 10%;">10%</div></dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <h3><span class="info">Информация - как со мной связаться</span></h3>
+                    <!-- СВЯЗЬ СО МНОЙ -->
+  <br />
+        <a href="tel: +38-066-225-38-37"><span class="telephone">Мой телефон</span></a>
+
+            <section class="special">
+              <div class="special-top-tip"><p class="telegram">Получайте <a href="tg://resolve?domain=ZAKKERN">уведомления</a> о новых материалахна свои компьютеры и телефоны, чтобы не пропустить ничего интересного.</p></div>
+                <div class="special-ripple">
+                  <a href="tg://resolve?domain=ZAKKERN" class="request-loader">
+                    <div><img src="img/telegram.svg" width="263px" height="393px"><p class="telegram4">Ссылка на Телеграм канал</p>
+                    <figcaption><p class="check1">Поставь галочку</p></figcaption>
+                    <div class="check"><input class="check" type="checkbox">
+                    <BIG>Поздравляю! Вы справились</BIG></div>
+                    </div>
+                      </a>
+                        </div>
+
+                              <div class="special-bottom-tip"><small class="telegram3">TELEGRAM канал</small><br><a href="tg://resolve?domain=ZAKKERN">Мой телеграм канал</a></div>
+  <br />
+                  <div class="special-copyright">v0,4 codename <span class="foot">«Evolution»
+                   </span></div>
+                    </section>
+                     </div>
+                      </div>
+                       <div class="footer-copyright">
+                        <div class="container">
+                         <p class="footer1">© 2022. Автор проекта:  <span>Анатолий Корниленко</span> 
+       </footer>
+      </p>
+     </div>
+    </div>
+   </div>
+   <script src="js/scripts.js"></script>
+  </body>
+
+</html>
